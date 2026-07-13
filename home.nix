@@ -31,7 +31,7 @@ in
       bindkey '^f' autosuggest-accept
     '';
     shellAliases = {
-      cc = "claude --dangerously-skip-permissions";
+      cc = "claude --permission-mode auto";
     };
     oh-my-zsh = {
       enable = true;
