@@ -41,6 +41,11 @@ config.keys = {
     mods = 'CMD',
     action = wezterm.action.SendString '\x15',
   },
+  {
+    key = 'k',
+    mods = 'CMD',
+    action = wezterm.action.ClearScrollback 'ScrollbackAndViewport',
+  },
 }
 
 return config
