@@ -22,6 +22,10 @@ in
   ];
   fonts.fontconfig.enable = true;
   home.sessionVariables.EDITOR = "nvim";
+  # Default AWS profile so shells (and agents) don't need `export AWS_PROFILE`.
+  # Read-only prod: safe footing for investigating failures. Override per-shell
+  # with `AWS_PROFILE=... aws ...` when you need write/other accounts.
+  home.sessionVariables.AWS_PROFILE = "layerdrone-production-ro";
 
   programs.zsh = {
     enable = true;
