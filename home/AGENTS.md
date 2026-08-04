@@ -13,4 +13,6 @@
   If you see one, even if it is not caused by what you are working on right now, still get it fixed.
 - NEVER respond directly to PR comments written by humans. Apply judgement on their suggestions, implement any changes you're confident about, then
   provide a summary privately back to the user. Allow the user the opportunity to reply back to their peers.
+- Avoid decision-trail comments. Only keep comments that explain the "why" behind what would otherwise
+  be surprising code. Code must be self-documenting as much as possible. 
 
